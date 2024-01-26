@@ -250,8 +250,6 @@ void st_analysisClass(void) {
         Class *buf = (__unsafe_unretained Class *) (malloc(total * sizeof(Class)));
         objc_getClassList(buf, total);
         
-        NSMutableDictionary <NSString *, NSMutableArray<NSString *> *> *dict = [NSMutableDictionary new];
-        
         for (int i = 0; i < total; i ++) {
             Class one = buf[i];
             for (Protocol *onePro in proArr) {

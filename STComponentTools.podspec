@@ -7,12 +7,12 @@ Pod::Spec.new do |spec|
   STComponentTools long description of the pod here.
   DESC
 
-  spec.homepage         = 'http://github.com/stephenchen/STComponentTools'
+  spec.homepage         = 'https://github.com/stephen5652/STComponentTools'
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "stephenchen" => "stephen5652@126.com" }
   spec.ios.deployment_target = '9.0'
 
-  spec.source       = { :git => "http://github/stephenchen/STComponentTools.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/stephen5652/STComponentTools.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

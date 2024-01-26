@@ -128,7 +128,7 @@ static STRouterExecute *imp;
         action(requestUsing, com);
         
     }else{
-        NSError *err = [STRouterHelper st_createError:STRouterErrorCode_noUrl info:nil message:@"路由失败,注册的路由没有设置响应事件"];
+        [STRouterHelper st_createError:STRouterErrorCode_noUrl info:nil message:@"路由失败,注册的路由没有设置响应事件"];
     }
 }
 
@@ -153,7 +153,7 @@ static STRouterExecute *imp;
         if (err) {
             *err = errBack;
         } else { //业务失败,发送方未判断错误, 此处在终端和日志系统中反馈一下
-           NSError *err = [STRouterHelper st_createError:STRouterErrorCode_noUrl info:nil message:@"路由检查能否开启失败,发起方未接受异常信息"];
+            [STRouterHelper st_createError:STRouterErrorCode_noUrl info:nil message:@"路由检查能否开启失败,发起方未接受异常信息"];
         }
         return NO;
     }
